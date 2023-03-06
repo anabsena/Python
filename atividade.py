@@ -1,5 +1,5 @@
-n = ("nome: ")
-sn = ("sobrenome: ")
+n = input("nome: ")
+sn = input("sobrenome: ")
 id =int(input('idade: '))
 peso=float(input("peso: "))
 altura=float(input("altura: "))
