@@ -7,10 +7,15 @@ try:
             resultado = numero1 + numero2
         elif operador == "-":
             resultado = numero1 - numero2
-        elif operador == "*":
+        elif operador == "*" or operador.lower() == 'x':
             resultado = numero1 * numero2
         elif operador == "/":
             resultado = numero1 / numero2
         else:
-            ("Operador invalido." + operador)
-    
+            print("Operador invalido." + operador)
+        print("f{numero1} {operador} {numero2} = {resultado}")
+        sair = input("Deseja sair: ").lower.startswith('s')
+        if sair:
+            break
+except:
+    print("Numero invalido.")
